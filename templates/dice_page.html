@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Dice On Demand</title>
+</head>
+<body>
+  <label>Enter the number of sides of the dice<label>
+  <input type="number" value="6" id="dicesides"></input>
+  <button onclick="rollDice()">Roll</button>
+  <br>
+  <label>You Rolled a </label><b id="ans"></b>
+
+  <script>
+    function rollDice()
+    {
+      //Get the value of number of sides of the dice
+      var num = document.getElementById("dicesides").value;
+      //Calculate 
+      var ans = Math.floor((Math.random() * num) + 1);
+      document.getElementById("ans").innerHTML = ans;
+    }
+  </script>
+</body>
+</html>
