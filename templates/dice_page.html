@@ -15,9 +15,12 @@
     {
       //Get the value of number of sides of the dice
       var num = document.getElementById("dicesides").value;
-      //Calculate 
+      //Calculate roll
       var ans = Math.floor((Math.random() * num) + 1);
+      //Print roll
       document.getElementById("ans").innerHTML = ans;
+      //Alert for same roll
+      alert("You rolled a "+ans);
     }
   </script>
 </body>
