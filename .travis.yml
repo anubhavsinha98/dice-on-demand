@@ -1,8 +1,7 @@
 os:
   - linux
 
-dist:
-  -xenial
+dist: xenial
 
 services:
   - docker
