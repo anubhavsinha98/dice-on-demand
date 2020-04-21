@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+#Only for FLASK
 import os
 
 app = Flask(__name__)
@@ -13,5 +14,6 @@ def dice_page():
 def test():
     return "Works!"
 
+#Only for FLASK
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)))
