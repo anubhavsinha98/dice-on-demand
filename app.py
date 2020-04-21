@@ -2,7 +2,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
 #Dice Main page
 @app.route('/')
 def dice_page():
