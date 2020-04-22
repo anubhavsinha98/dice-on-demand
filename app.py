@@ -13,7 +13,3 @@ def dice_page():
 @app.route('/test')
 def test():
     return "Works!"
-
-@app.route('/test2')
-def te2st():
-    return "Workss!"
