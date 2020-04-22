@@ -12,4 +12,8 @@ def dice_page():
 #Testing to check if it works
 @app.route('/test')
 def test():
+    return "Works!"
+
+@app.route('/test2')
+def te2st():
     return "Workss!"
