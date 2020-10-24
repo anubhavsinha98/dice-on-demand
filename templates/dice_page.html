@@ -2,13 +2,28 @@
 <html>
 <head>
   <title>Dice On Demand</title>
+  <style>
+    #output{
+      margin-top: 20%;
+      margin-left: 30%;
+      font-size: 40px;
+    }
+    #input{
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-  <label>Enter the number of sides of the dice<label>
+  <div id="input">
+  <label>Enter the number of sides of the dice</label>
   <input type="number" value="6" id="dicesides"></input>
   <button onclick="rollDice()">Roll</button>
+  </div>
   <br>
-  <label>You Rolled a </label><b id="ans"></b>
+  <div id="output">
+  <h1>You Rolled a <strong id="ans"></strong></h1>
+  </div>
+  
 
   <script>
     function rollDice()
@@ -19,8 +34,6 @@
       var ans = Math.floor((Math.random() * num) + 1);
       //Print roll
       document.getElementById("ans").innerHTML = ans;
-      //Alert for same roll
-      alert("You rolled a "+ans);
     }
   </script>
 </body>
