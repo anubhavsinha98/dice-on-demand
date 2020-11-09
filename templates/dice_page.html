@@ -16,7 +16,7 @@
 <body>
   <div id="input">
   <label>Enter the number of sides of the dice</label>
-  <input type="number" value="6" id="dicesides"></input>
+  <input type="number" value="6" min="0"  id="dicesides"></input>
   <button onclick="rollDice()">Roll</button>
   </div>
   <br>
@@ -31,10 +31,13 @@
       //Get the value of number of sides of the dice
       var num = document.getElementById("dicesides").value;
       //Calculate roll
+      if(num < 0 ){
+        alert("number must be bigger than zero")
+      } else{
       var ans = Math.floor((Math.random() * num) + 1);
       //Print roll
       document.getElementById("ans").innerHTML = ans;
-    }
+    }}
   </script>
 </body>
 </html>
